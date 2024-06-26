@@ -106,7 +106,7 @@
     <div class="continer">
         <input type="text" class="input-text" id="input-value1" placeholder="Enter your number 1 :" >
         <input type="text"class="input-text" id="input-value2"  placeholder="Enter your number 2 :"  >
-        <p id="result">sum = 0</p>
+        <p id="result"></p>
         <button onclick="calculater()" class="btn">ANS</button>
         <button type="button" id="receat" onclick="reset()" class="btn">Reset</button>
        
@@ -118,14 +118,13 @@
       
 
          function calculater(){
-              const Elementnum1 = document.getElementById(id="input-value1");
-             const Elementnum2 = document.getElementById(id="input-value2");
+              const num1Element = document.getElementById(id="input-value1");
+             const num2Element = document.getElementById(id="input-value2");
            
-            const total = parseInt(Elementnum1.value) + parseInt(Elementnum2.value) 
-             const resultElement = document.getElementById("result")
-             resultElement.innerText = sum : $(total)
+            const total= parseInt(num1Element.value) + parseInt(num2Element.value) 
             
-                
+            const resultEelment =  document.getElementById("result")
+            resultEelment.innerText = total
 
          }
          function reset()
