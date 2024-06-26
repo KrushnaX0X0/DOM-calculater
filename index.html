@@ -7,6 +7,10 @@
 </head>
 <body>
     <style>
+
+        body{
+            background:linear-gradient(to right, #ede4ef, #d9dcdf, rgb(40 152 148 / 96%))
+        }
         h1{
             text-align: center;
         }
@@ -45,19 +49,65 @@
             width: 12vw;
             border-radius: 10px;
             font-weight: 600;
+            margin: 10px;
         }
         .btn:hover{
             background-color: brown;
             color: white;
         }
+
+        @media screen and (max-width:480px) {
+
+        .fist-continer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .continer{
+            height: 54vh;
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid red;
+            background-color: burlywood;
+            border-radius: 20px;
+        }
+        .input-text{
+            padding: 1vh;
+            margin: 2vh 0;
+            border-radius: 8px;
+           
+        }
+        p{
+            font-size: 6vw;
+            font-weight: 700;
+
+        }
+        .btn{
+            height: 5vh;
+            width: 42vw;
+            border-radius: 10px;
+            font-weight: 600;
+            margin: 10px;
+        }
+
+
+        
+    }
       
     </style>
     <h1>TWO NUMBER ADDTION </h1>
     <div class="fist-continer">
     <div class="continer">
-        <input type="text" class="input-text" id="input-value1" onkeyup="calculater()">
-        <input type="text"class="input-text" id="input-value2" onkeyup="calculater()" >
+        <input type="text" class="input-text" id="input-value1" placeholder="Enter your number 1 :" >
+        <input type="text"class="input-text" id="input-value2"  placeholder="Enter your number 2 :"  >
         <p id="result">sum = 0</p>
+        <button onclick="calculater()" class="btn">ANS</button>
         <button type="button" id="receat" onclick="reset()" class="btn">Reset</button>
        
 
@@ -68,11 +118,12 @@
       
 
          function calculater(){
-              const Elementnum1 = document.getElementById(id="input-value1").value;
-             const Elementnum2 = document.getElementById(id="input-value2").value;
+              const Elementnum1 = document.getElementById(id="input-value1");
+             const Elementnum2 = document.getElementById(id="input-value2");
            
-            const total = parseInt(Elementnum1 ) + parseInt(Elementnum2) 
-            document.getElementById("result").innerText = total 
+            const total = parseInt(Elementnum1.value) + parseInt(Elementnum2.value) 
+             const resultElement = document.getElementById("result")
+             resultElement.innerText = sum : $(total)
             
                 
 
@@ -84,15 +135,6 @@
             document.getElementById("result").innerText = "sum = 0";
         
          }
-
-        
-            
-         
-
-        
-
-
-         
 
 
     </script>
