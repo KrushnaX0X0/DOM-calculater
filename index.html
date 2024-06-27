@@ -121,10 +121,10 @@
       
 
          function calculater(){
-              const num1Element = document.getElementById(id="input-value1");
-             const num2Element = document.getElementById(id="input-value2");
+              const num1Element = document.getElementById("input-value1");
+             const num2Element = document.getElementById("input-value2");
            
-            const total= parseInt(num1Element.value) + parseInt(num2Element.value) 
+            const total= (parseInt(num1Element.value)|| 0) +( parseInt(num2Element.value)||0) 
             
             const resultEelment =  document.getElementById("result")
             resultEelment.innerText =`sum: ${total}`
@@ -132,8 +132,8 @@
          }
          function reset()
          {
-            document.getElementById(id="input-value1").value = "";
-            document.getElementById(id="input-value2").value = "";
+            document.getElementById("input-value1").value = "";
+            document.getElementById("input-value2").value = "";
             document.getElementById("result").innerText = "sum = 0";
         
          }
