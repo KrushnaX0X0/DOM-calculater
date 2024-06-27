@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/354d6d38-b177-436e-9069-40c756080002/deploy-status)](https://app.netlify.com/sites/magick-cal/deploys)[![Netlify Status](https://api.netlify.com/api/v1/badges/354d6d38-b177-436e-9069-40c756080002/deploy-status)](https://app.netlify.com/sites/magick-cal/deploys)
